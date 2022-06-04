@@ -1,0 +1,51 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :p:70:p, par l {seq l {par l {seq {comp jlabel_psw:::p:48:p, space s:::p, comp tf_psw:::p:181:p}, seq l {comp jlabel:::p:48:p, space s:::p, par l {comp label1:::p::p, comp tf_account:::p:181:p}}}, space ::81:x}, seq l {space :p:1:p, comp btn_login:::p::p, space ::92:x, comp btn_exit:::p::p, space :p:79:p}}}, comp jlabel_notice::l::398:x}"
+			"$verticalGroup": "par l {seq l {space :p:36:p, comp label1:::p::p, space :p:30:p, par t {comp jlabel:::p:32:p, comp tf_account:::p::p}, space s:::p, par b {comp jlabel_psw::b:p:32:p, comp tf_psw::b:p::p}, space :::p, comp jlabel_notice:::::p, space s:::p, par b {comp btn_login::b:p::p, comp btn_exit::b:p::p}, space ::15:x}}"
+		} ) {
+			name: "JF_login"
+			"title": "登录"
+			"font": new java.awt.Font( "黑体", 0, 12 )
+			"visible": true
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jlabel"
+				"text": "名称"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jlabel_psw"
+				"text": "密码"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btn_login"
+				"text": "登录"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btn_exit"
+				"text": "重置"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "tf_account"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "tf_psw"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "客户端登录"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 0, 26 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jlabel_notice"
+				"text": "欢迎使用聊天室"
+				"horizontalAlignment": 0
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}

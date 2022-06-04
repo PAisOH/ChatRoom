@@ -1,0 +1,61 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:20:p, par l {comp scrollPane2::::322:x, comp scrollPane1::::322:x}, space u:::p, par l {seq {par l {comp btn_exit::l:::x, comp btn_send::l:::x, seq l {comp tf_perUserId:::p:151:p, space :0:0:x}, comp scrollPane3::l:::x}, space :18:18:p}, seq {comp btn_reload_list:::p:151:p, space :::x}}}}"
+			"$verticalGroup": "par l {seq {space :p:14:p, par l {seq {comp btn_reload_list:::p:33:p, space :p:3:p, comp scrollPane3::::144:x, space :::p, comp tf_perUserId:::p::p, space :p:18:p}, seq {comp scrollPane1::::216:x, space s:::p}}, par t:::p {comp scrollPane2:::p:105:p, seq {comp btn_send:::::x, space :::p, comp btn_exit:::p:33:p}}, space :p:15:p}}"
+		} ) {
+			name: "this"
+			"visible": true
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "ta_output"
+					"disabledTextColor": new java.awt.Color( 51, 51, 51, 255 )
+					"font": new java.awt.Font( "微软雅黑 Light", 0, 12 )
+					"enabled": false
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "ta_input"
+					"disabledTextColor": new java.awt.Color( 0, 153, 153, 255 )
+					"font": new java.awt.Font( "微软雅黑 Light", 0, 17 )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btn_exit"
+				"text": "退出"
+				"background": new java.awt.Color( 153, 51, 0, 255 )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane3"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "ta_list"
+					"enabled": false
+					"disabledTextColor": new java.awt.Color( 0, 102, 102, 255 )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "tf_perUserId"
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btn_send"
+				"text": "发送"
+				"background": new java.awt.Color( 0, 153, 153, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btn_reload_list"
+				"text": "刷新用户列表"
+				"background": new java.awt.Color( 102, 102, 255, 255 )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 525, 400 )
+		} )
+	}
+}
